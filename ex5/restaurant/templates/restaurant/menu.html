@@ -1,0 +1,123 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Little Lemon - Menu</title>
+    <link rel="stylesheet" href="{% static 'restaurant/css/style.css' %}">
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="{% static 'restaurant/images/logo.png' %}">
+        <h1>LITTLE LEMON</h1>
+    </div>
+
+    <div class="navbar">
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'menu' %}">Menu</a>
+        <a href="{% url 'administration' %}">Administration</a>
+        <a href="{% url 'contact' %}">Contact Us</a>
+    </div>
+
+    <h1 class="page-title">Our Food Menu</h1>
+
+    <div class="food-grid">
+
+        <div class="card">
+            <img src="{% static 'restaurant/images/pizza.jpg' %}">
+            <h2>Margherita Pizza</h2>
+            <p>Classic pizza with cheese and tomato.</p>
+            <h3>₹250</h3>
+        </div>
+
+        <div class="card">
+            <img src="{% static 'restaurant/images/burger.jpg' %}">
+            <h2>Cheese Burger</h2>
+            <p>Juicy burger with fresh vegetables.</p>
+            <h3>₹180</h3>
+        </div>
+
+        <div class="card">
+            <img src="{% static 'restaurant/images/pasta.jpg' %}">
+            <h2>White Sauce Pasta</h2>
+            <p>Creamy pasta with delicious herbs.</p>
+            <h3>₹220</h3>
+        </div>
+
+        <div class="card">
+            <img src="{% static 'restaurant/images/sandwich.jpg' %}">
+            <h2>Club Sandwich</h2>
+            <p>Fresh sandwich with vegetables and cheese.</p>
+            <h3>₹150</h3>
+        </div>
+
+        <div class="card">
+            <img src="{% static 'restaurant/images/frenchfries.jpg' %}">
+            <h2>French Fries</h2>
+            <p>Crispy golden potato fries.</p>
+            <h3>₹100</h3>
+        </div>
+
+        <div class="card">
+            <img src="{% static 'restaurant/images/salad.jpg' %}">
+            <h2>Fresh Salad</h2>
+            <p>Healthy salad with fresh vegetables.</p>
+            <h3>₹130</h3>
+        </div>
+
+        <div class="card">
+            <img src="{% static 'restaurant/images/noodles.jpg' %}">
+            <h2>Veg Noodles</h2>
+            <p>Delicious noodles with fresh vegetables.</p>
+            <h3>₹170</h3>
+        </div>
+
+        <div class="card">
+            <img src="{% static 'restaurant/images/soup.jpg' %}">
+            <h2>Tomato Soup</h2>
+            <p>Hot and tasty tomato soup.</p>
+            <h3>₹90</h3>
+        </div>
+
+        <div class="card">
+            <img src="{% static 'restaurant/images/garlicbread.jpg' %}">
+            <h2>Garlic Bread</h2>
+            <p>Toasted bread with garlic and butter.</p>
+            <h3>₹120</h3>
+        </div>
+
+        <div class="card">
+            <img src="{% static 'restaurant/images/dosa.jpg' %}">
+            <h2>Masala Dosa</h2>
+            <p>Crispy dosa with potato filling.</p>
+            <h3>₹100</h3>
+        </div>
+
+        <div class="card">
+            <img src="{% static 'restaurant/images/brownie.jpg' %}">
+            <h2>Chocolate Brownie</h2>
+            <p>Rich chocolate brownie dessert.</p>
+            <h3>₹140</h3>
+        </div>
+
+        <div class="card">
+            <img src="{% static 'restaurant/images/juice.jpg' %}">
+            <h2>Fresh Fruit Juice</h2>
+            <p>Refreshing juice made with fresh fruits.</p>
+            <h3>₹80</h3>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <h3>LITTLE LEMON</h3>
+        <hr>
+        <p>Designed by Ashwin</p>
+    </div>
+
+</body>
+</html>
+

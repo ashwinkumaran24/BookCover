@@ -1,0 +1,75 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Little Lemon - Administration</title>
+    <link rel="stylesheet" href="{% static 'restaurant/css/style.css' %}">
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="{% static 'restaurant/images/logo.png' %}">
+        <h1>LITTLE LEMON</h1>
+    </div>
+
+    <div class="navbar">
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'menu' %}">Menu</a>
+        <a href="{% url 'administration' %}">Administration</a>
+        <a href="{% url 'contact' %}">Contact Us</a>
+    </div>
+
+    <h1 class="page-title">Our Administration</h1>
+
+    <div class="food-grid">
+
+        <div class="card">
+            <img src="{% static 'restaurant/images/person1.jpg' %}">
+            <h2>Arun Kumar</h2>
+            <p>Restaurant Manager</p>
+        </div>
+
+        <div class="card">
+            <img src="{% static 'restaurant/images/person2.jpg' %}">
+            <h2>Priya Sharma</h2>
+            <p>Head Chef</p>
+        </div>
+
+        <div class="card">
+            <img src="{% static 'restaurant/images/person3.jpg' %}">
+            <h2>Rahul Kumar</h2>
+            <p>Assistant Manager</p>
+        </div>
+
+        <div class="card">
+            <img src="{% static 'restaurant/images/person4.jpg' %}">
+            <h2>Meena Devi</h2>
+            <p>Finance Manager</p>
+        </div>
+
+        <div class="card">
+            <img src="{% static 'restaurant/images/person5.jpg' %}">
+            <h2>Vikram Raj</h2>
+            <p>Marketing Manager</p>
+        </div>
+
+        <div class="card">
+            <img src="{% static 'restaurant/images/person6.jpg' %}">
+            <h2>Anjali</h2>
+            <p>Customer Relations Manager</p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <h3>LITTLE LEMON</h3>
+        <hr>
+        <p>Designed by Ashwin</p>
+    </div>
+
+</body>
+</html>
+

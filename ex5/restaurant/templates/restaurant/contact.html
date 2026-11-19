@@ -1,0 +1,66 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Little Lemon - Contact Us</title>
+    <link rel="stylesheet" href="{% static 'restaurant/css/style.css' %}">
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="{% static 'restaurant/images/logo.png' %}">
+        <h1>LITTLE LEMON</h1>
+    </div>
+
+    <div class="navbar">
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'menu' %}">Menu</a>
+        <a href="{% url 'administration' %}">Administration</a>
+        <a href="{% url 'contact' %}">Contact Us</a>
+    </div>
+
+    <h1 class="page-title">Contact Us</h1>
+
+    <div class="contact-box">
+
+        <h2>Visit Little Lemon</h2>
+
+        <p>
+            We would love to hear from you!
+            Visit our restaurant or contact us
+            using the details below.
+        </p>
+
+        <h3>Address</h3>
+        <p>
+            Little Lemon Restaurant,<br>
+            Anna Nagar,<br>
+            Chennai, Tamil Nadu - 600040.
+        </p>
+
+        <h3>Phone Number</h3>
+        <p>+91 98765 43210</p>
+
+        <h3>Email Address</h3>
+        <p>littlelemon@example.com</p>
+
+        <h3>Opening Hours</h3>
+        <p>
+            Monday - Friday: 2 PM - 10 PM<br>
+            Saturday: 2 PM - 11 PM<br>
+            Sunday: 2 PM - 9 PM
+        </p>
+
+    </div>
+
+    <div class="footer">
+        <h3>LITTLE LEMON</h3>
+        <hr>
+        <p>Designed by Ashwin</p>
+    </div>
+
+</body>
+</html>
